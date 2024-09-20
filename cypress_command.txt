@@ -1,0 +1,59 @@
+cypress nd JS
+--------------
+
+install node js
+
+npm init  -y --> this is a command to initilize a directory as node module node js
+npm install cypress  -D
+
+npx cypress -v to check the cypress version
+
+npx cypress verify  --> to verify cypress installation
+
+npx cypress open  --> to start with cpyress
+
+if we place x befor it, that test cases will be ignored
+if we want to run some tc then it.only we will mention
+
+
+we have check() method to check a check box
+
+we have select() method to select selectbox only having the tag select
+
+cy.WriteFile("filename", "extension", {flags}) //to write file 
+cy.readFile("filename").then((data)=>){
+	cy.log(data)
+}
+
+{log:false} -- not to log the step
+{delay:0}  -- no delay in typing
+{timeout:0}  -- timeout for elements
+
+cy.go("back"), cy.go(-1)
+cy.go("forward"), cy.go(1)
+
+allure issue
+https://github.com/cypress-io/cypress/issues/27113
+npm install  @shelex/cypress-allure-plugin@2.40.0 -D
+
+https://www.npmjs.com/package/@mmisty/cypress-allure-adapter
+
+cy.get().invoke('removeAttr', 'targe').click()  --> to remove attribute from element
+		invoke('attr', "<attr_name>", "<attr_val>")  --> to update the attribute
+
+cy.get().selectFile("filename", {action: 'drag-drop'})  --> to upload a file
+
+cy.get().type("some text {enter}") --> to type enter in search box
+
+source --> snippets --> new snippets --> debugger;
+
+.first() will give first element as eq(0)
+
+
+cy.contains("button", 'Clear filters')
+    .then(button => {
+    if (button.is(':visible')) {
+        cy.wrap(button).click();
+    }
+})
+
