@@ -1,0 +1,18 @@
+{
+  "name": "lrn_js_cy",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@cypress/grep": "^4.0.0",
+    "@shelex/cypress-allure-plugin": "^2.40.0",
+    "cypress": "^12.14.0",
+    "dotenv": "^16.3.1"
+  },
+  "keywords": [],
+  "description": "automation using cypress"
+}
