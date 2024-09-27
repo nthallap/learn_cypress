@@ -20,7 +20,7 @@ we have check() method to check a check box
 
 we have select() method to select selectbox only having the tag select
 
-cy.WriteFile("filename", "extension", {flags}) //to write file 
+cy.writeFile("filename", "extension", {flags}) //to write file 
 cy.readFile("filename").then((data)=>){
 	cy.log(data)
 }
