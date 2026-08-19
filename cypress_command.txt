@@ -57,3 +57,5 @@ cy.contains("button", 'Clear filters')
     }
 })
 
+#command to execute test cases from command prompt
+>npx cypress run --browser chrome --headed --no-runner-ui --spec cypress\e2e\3-my-develop\use_fixtures.cy.js
